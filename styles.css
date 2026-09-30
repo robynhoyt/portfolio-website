@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header h1,
+.navbar-brand {
+    font-family: "Poppins", sans-serif;
+
+}
+
+main p {
+    line-height: 1.6;
+}
+
+.nav-link {
+    transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.85;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+#projects .card {
+    height: 100%;
+}
+
+#projects .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}

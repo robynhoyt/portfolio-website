@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robyn Hoyt | Personal Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="bg-primary bg-gradient text-white text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-5 fw-semibold mb-1" style="font-family: Poppins, Sans-serif;">Robyn Hoyt</h1>
+                    <p class="lead mb-0"><em>Cybersecurity and Computer Science Student</em></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#" style="font-family: Poppins, Sans-serif;">Robyn Hoyt</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="dynamicNav"></ul>
+
+                <a id="resumeBtn" class="btn btn-primary ms-lg-3 mt-2 mt-lg-0" href="Robyn_Hoyt_Resume.pdf" download>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+     </nav>
+
+     <!-- Main Content -->
+    <main class="container my-5">
+
+        <!-- Summary -->
+        <section id="summary" class="mb-5">
+            <h2 class="h3 mb-3">Summary</h2>
+            <p class="lead">
+                Hello, my name is <strong>Robyn Hoyt</strong>. I am currently a college student studying
+                <mark>Cybersecurity and Computer Science</mark>. I am interested in learning how systems work,
+                how data is protected, and how technology can be used responsibly. Through my coursework, 
+                I am developing both technical skills and problem solving abilities.
+            </p>
+        </section>
+
+        <!-- Greeting Section -->
+         <section id="greeting" class="mb-5">
+            <h2 class="h3 mb-3">Greeting</h2>
+            <p id="greetingMessage" class="lead mb-0"></p>
+         </section>
+
+         <!-- Resume Download Counter -->
+          <section id="resumeTracker" class="mb-5">
+            <h2 class="h3 mb-3">Resume Download Tracker</h2>
+            <p class="lead mb-0">Resume Downloads: <span id="downloadCount">0</span></p>
+          </section>
+
+        <!-- Skills -->
+        <section id="skills" class="mb-5">
+            <h2 class="h3 mb-3">Skills</h2>
+
+            <div class="row g-2 mb-4">
+                <div class="col-md-8">
+                    <input type="text" id="skillInput" class="form-control" placeholder="Enter a new skill">
+                </div>
+                <div class="col-md-4">
+                    <button id="addSkillBtn" class="btn btn-success w-100">Add Skill</button>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12">
+                    <input type="text" id="skillSearch" class="form-control" placeholder="Search skills">
+                </div>
+            </div>
+
+            <div id="skillsContainer" class="row g-3"></div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="mb-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3">
+                <h2 class="h3 mb-3 mb-md-0">Projects</h2>
+                <button id="sortProjectsBtn" class="btn btn-outline-primary">Sort Projects by Deadline</button>
+            </div>
+            
+            <div id="projectsContainer" class="row g-4"></div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="mb-5">
+            <h2 class="h3 mb-3">Education</h2>
+            <div id="educationTableContainer"></div>
+        </section>
+
+         <!-- Experience -->
+        <section id="experience" class="mb-5">
+            <h2 class="h3 mb-3">Experience</h2>
+            <div id="experienceTableContainer"></div>
+        </section>
+
+    <!-- Contact -->
+        <section id="contact" class="mb-5">
+            <h2 class="h3 mb-3">Contact</h2>
+            <p class="mb-1">Email: <a href="mailto:hoytrobyn1@gmail.com">hoytrobyn1@gmail.com</a></p>
+            <p class="mb-1">Phone: <a href="tel:+16029899131">602-989-9131</a></p>
+            <p class="mb-0">
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/robyn-hoyt-805216260/" target="_blank" rel="noopener noreferrer">
+                    linkedin.com/in/robyn-hoyt
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+<!--Footer-->
+    <footer class="bg-dark bg-gradient text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mb-0">2026 Robyn Hoyt - Homework 9</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
